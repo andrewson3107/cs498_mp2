@@ -9,6 +9,7 @@ def serve():
         return socket.gethostname()
     elif request.method == "POST":
         subprocess.Popen(['python3', 'stress_cpu.py']) 
+        return "Done"
         
 
 if __name__ == '__main__':
